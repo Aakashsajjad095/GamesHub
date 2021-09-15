@@ -1,14 +1,6 @@
-## Caching data and queuing post requests offline Redux, Persistance, Redux Offline?
+## Game Hub
 
-In this Example we will learn how to Caching data and queuing post request and get request when your device dont have internet connected when its connected to internet your app get data from api and post queuing data on server.
-
-## Using:
-
-- [NetInfo](https://www.npmjs.com/package/@react-native-community/netinfo).
-- [redux](https://www.npmjs.com/package/redux).
-- [redux-thunk](https://www.npmjs.com/package/redux-thunk).
-- [redux-persistance](https://www.npmjs.com/package/redux-persist).
-- [AsyncStorage](https://www.npmjs.com/package/@react-native-async-storage/async-storage).
+All Games in one App.play and Enjoy
 
 ## How to run it?
 
