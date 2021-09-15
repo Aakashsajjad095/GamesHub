@@ -1,7 +1,7 @@
 import React from 'react'
 import {View,StyleSheet,Text,TouchableOpacity,Platform} from "react-native"
 import {Colors} from '../../res/style/colors'
-import {sizeWidth,sizeFont} from '../../src/util/size'
+import {sizeHeight,sizeFont} from '../../src/util/size'
 import { fonts } from '../../res/style/fonts'
 
 export default function Header({title,onPress,right,left}) {
@@ -25,7 +25,7 @@ export default function Header({title,onPress,right,left}) {
 const styles=StyleSheet.create({
     header: {
        
-        backgroundColor: 'white',
+        backgroundColor: Colors.white,
         borderTopRightRadius:5,
         borderTopLeftRadius:5,
         borderBottomRightRadius:15,
@@ -40,7 +40,7 @@ const styles=StyleSheet.create({
     },
     bar: {
         padding:10,
-        height: 70,
+        height: sizeHeight(13),
         alignItems: 'center',
         flexDirection: "row",
         justifyContent: 'space-between',

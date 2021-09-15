@@ -1,21 +1,16 @@
 import React from 'react';
 import {
-  FlatList,
   ImageBackground,
-  TextInput,
   View,
-  Image,
-  Button,
   Text,
   StyleSheet,
-  SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
 import {fonts} from '../../res/style/fonts';
-import {FONTS, SIZES} from '../../res/style/theme';
+import {FONTS} from '../../res/style/theme';
 import {sizeWidth, sizeFont, sizeHeight} from '../../src/util/size';
 import {Colors} from '../../res/style/colors';
-const GameCard = ({navigation, item,onPress}) => {
+const GameCard = ({item,onPress}) => {
   return (
     <View style={styles.mainView}>
       <TouchableOpacity style={styles.cardView}
@@ -28,10 +23,10 @@ const GameCard = ({navigation, item,onPress}) => {
           resizeMode="cover"
           imageStyle={{borderRadius: 10}}
           style={{flex: 1}}>
-          <View style={styles.pdfView}>
-            <Text style={styles.pdfText}>{item.status}</Text>
+          <View style={styles.statusView}>
+            <Text style={styles.statusText}>{item.status}</Text>
           </View>
-          <View style={styles.docNameMainView}>
+          <View style={styles.gameNameView}>
             <View
               style={{
                  flex:1,
@@ -66,7 +61,7 @@ const styles = StyleSheet.create({
     width: sizeWidth(30),
     height: sizeHeight(23),
   },
-  pdfView: {
+  statusView: {
     backgroundColor: 'green',
     height: sizeHeight(2.5),
     width: sizeWidth(10),
@@ -78,14 +73,14 @@ const styles = StyleSheet.create({
     right: 2,
     alignSelf: 'flex-end',
   },
-  pdfText: {
+  statusText: {
     color: 'white',
     fontSize:sizeFont(2),
     alignSelf: 'center',
     alignItems: 'center',
     margin: 2,
   },
-  docNameMainView: {
+  gameNameView: {
    backgroundColor: 'rgba(0,0,0,0.5)',
     position: 'absolute',
     bottom: 0,

@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View,Image,TouchableOpacity } from 'react-native'
 import {FONTS, SIZES } from '../../res/style/theme';
 import {Colors} from '../../res/style/colors'
-import { sizeWidth } from '../util/size';
+import { sizeWidth,sizeHeight } from '../util/size';
 
 const CircleImage = ({item,index,onPress}) => {
     var trendingStyle = {};
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
    },
    imageStyle:
    {
-    height:60,width:60,borderRadius:60,
+    height:sizeHeight(10),width:sizeWidth(17),borderRadius:sizeWidth(17),
     borderColor:Colors.grey,
     borderWidth:2,
     backgroundColor:Colors.black,

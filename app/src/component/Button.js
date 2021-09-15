@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View,TouchableOpacity } from 'react-native'
 import {Colors} from '../../res/style/colors'
-import {sizeWidth,sizeFont} from '../../src/util/size'
+import {sizeWidth,sizeFont,sizeHeight} from '../../src/util/size'
 import { fonts } from '../../res/style/fonts'
 
 export default function Button({onPress,style,title}) {
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         marginLeft: 15,
         justifyContent: 'center', alignItems: 'center',
         marginRight: 15,
-        height: 50,
+        height: sizeHeight(8),
         width: sizeWidth(52),
         borderRadius: 30,
         justifyContent: 'center',

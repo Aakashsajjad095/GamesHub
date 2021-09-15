@@ -18,24 +18,20 @@ export const styles = StyleSheet.create({
           },
           tabbarStyle : {
             borderRadius:30,
-            // padding:10,
-            height:30,
+            height:sizeHeight(6),
             paddingLeft:15,
             paddingRight:15,
             justifyContent: 'center',
             alignItems: 'center',
             alignContent:'center',
-            marginHorizontal:5
-            // marginTop:5,   
+            marginHorizontal:5  
           },
           
    matchstatusbartext:{
-    //fontWeight:'bold',
      fontSize: sizeFont(5),
      fontFamily: fonts['Gotham-Medium'],
      fontStyle:'normal',
      letterSpacing:1,
-    //marginLeft:11,
     color:Colors.darkGrey,
     
     

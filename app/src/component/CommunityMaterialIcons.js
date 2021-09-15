@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
 import {Colors} from '../../../../app/res/style/colors';
-
 
 export default function communityMaterialIcons(props) {
   return (
